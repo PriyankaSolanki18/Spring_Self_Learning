@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Firstly add namespace of spring -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Your bean definitions go here -->
+    <!-- This is first bean -->
+    <bean class="com.springcore.Student" name="student1">
+    <!-- Using value as attribute -->
+    	<property name="studentId" value="3009832"/>  <!-- Self closing tag -->
+    		<!--  <value>30009832</value> -->
+    	<!-- </property> -->
+    	<property name="studentName" value="Sree"/>
+    	<property name="StudentAddress" value="Gurugram"/>
+    </bean>
+	
+	<!-- This is second bean -->
+    <bean class="com.springcore.Student" name="student2">
+    <!-- Using value as attribute -->
+    	<property name="studentId" value="3009833"/>  <!-- Self closing tag -->
+    	<property name="studentName" value="Priyu"/>
+    	<property name="StudentAddress" value="Gurugram"/>
+    </bean>
+    
+    <!-- Using p schema -->
+    <bean class="com.springcore.Student" name="student3" p:studentId="123" p:studentName="Priya" p:studentAddress="Rajasthan"/>
+    
+</beans>
