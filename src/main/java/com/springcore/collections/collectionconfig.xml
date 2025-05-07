@@ -9,10 +9,12 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
-
+	
+	
     <bean name="emp1" class="com.springcore.collections.Emp">
     	<property name="name" value="Radha"/>
     	
+    	<!-- The list inside property tag is not standalone that means we can't use the same list outside of this property tag we if want to use the same list -->
     	<property name="phones">
     		<list>
     			<value>9876253647</value>

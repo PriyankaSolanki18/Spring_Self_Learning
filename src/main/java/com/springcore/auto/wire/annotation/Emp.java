@@ -1,0 +1,40 @@
+package com.springcore.auto.wire.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Emp {
+	//annotation used on properties/variables
+	@Autowired
+	@Qualifier("tempaddress")
+	private Address address;
+
+	public Address getAddress() {
+		return address;
+	}
+	
+	//annotation used on setter method
+	//@Autowired
+	public void setAddress(Address address) {
+		System.out.println("Setting values");
+		this.address = address;
+	}
+	
+	public Emp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	//annotation used on constructor
+	//@Autowired
+	public Emp(Address address) {
+		this.address = address;
+		System.out.println("Inside constructor");
+		}
+	
+	@Override
+	public String toString() {
+		return "Emp [address=" + address + "]";
+	}
+	
+}
