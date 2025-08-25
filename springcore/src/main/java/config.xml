@@ -10,7 +10,7 @@
 	   
 	   
 	   <bean class="com.springcore.Student" name="student1">
-	   <!-- Agar hamne field ko property tag ki help se set kiya h mtlb ham setter injection use ker rhae h toh setter method call hoga --> 
+	   <!-- 1. Agar hamne field ko property tag ki help se set kiya h mtlb ham setter injection use ker rhae h toh setter method call hoga --> 
 	   		<property name="studentId">
 	   			<value>123</value>
 	   		</property>
@@ -21,6 +21,16 @@
 	   			<value>Gurgaon</value>
 	   		</property>
 	   </bean>
+	   
+	   <!-- 2. second bean : using value as attribute -->
+	   <bean class="com.springcore.Student" name="student2">
+	   	<property name="studentId" value="124"/>
+	   	<property name="studentName" value="Sree"/>
+	   	<property name="StudentAddress" value="AP"/>
+	   </bean>
+	   
+	   <!-- 3. third bean -->
+	   <bean class="com.springcore.Student" name="student3" p:studentId="125" p:studentName="Yad" p:studentAddress="kur"/>
 	   
 </beans>
 
