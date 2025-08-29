@@ -31,8 +31,12 @@
 	   			<entry key="cpp" value="2 months"/>
 	   		</map>
 	   	</property>
+        <property name="props">
+            <props>
+                <prop key="name">Priyanka Solanki</prop>
+                <prop key="branch">Computer Science</prop>
+            </props>
+        </property>
 	   </bean> 
-	  
+	   
 </beans>
-
-
