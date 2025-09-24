@@ -7,7 +7,7 @@
 	   http://www.springframework.org/schema/beans/spring-beans.xsd
 	   http://www.springframework.org/schema/context
 	   http://www.springframework.org/schema/context/spring-context.xsd">
-	   
+	    
 	   <context:annotation-config />
 	   
 	  <!--  1. byName
@@ -45,6 +45,11 @@
 	  <bean class="com.springcore.auto.wire.annotation.Address" name="address">
 	  	<property name="street" value="ram gali"/>
 	  	<property name="city" value="Ayodhya"/>
+	  </bean>
+	  
+	  <bean class="com.springcore.auto.wire.annotation.Address" name="address2">
+	  	<property name="street" value="sham gali"/>
+	  	<property name="city" value="Banaras"/>
 	  </bean>
 	  
 	  <bean class="com.springcore.auto.wire.annotation.Emp" name="emp1" />
