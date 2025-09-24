@@ -15,7 +15,14 @@ public class Addition {
 		System.out.println("Constructor : double, double");
 	}
 	
+	public Addition(String a, String b) {		this.a=Integer.parseInt(a);
+		this.b=Integer.parseInt(b);
+		System.out.println("Constructor : string, string");
+	}
+	
 	public void doSum() {
+		System.out.println("Value of a : "+this.a);
+		System.out.println("Value of b : "+this.b);
 		System.out.println("sum  is = "+(this.a+this.b));
 	}
 }

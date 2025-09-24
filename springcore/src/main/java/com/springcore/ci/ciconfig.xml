@@ -29,8 +29,8 @@
 	   </bean> -->
 	   
 	   <bean class="com.springcore.ci.Addition" name="add">
-	   		<constructor-arg value="12"/>
-	   		<constructor-arg value="23"/>
+	   		<constructor-arg value="12" type="int" index="1"/> <!-- yaha hamne explicitly specify kiya h : ham values ka order bhi change ker sakte h ki konsi value kis variable me jayegi -->
+	   		<constructor-arg value="23" type="int" index="0"/> <!-- isme hamne explicitly bata diya ki vhi constructor call kerna h jiska phela aur dusra parameter dono integer ho taki ambiguity problem na ho even if class me Strign parameter vala constructor ho coz by default value ko as String treat kiya jata h toh agar String parameter vala constructor hoga ho sabse phele vo call hoga bhale hi vo sabse last me likha ho  -->
 	   </bean>
 	   
 	 <!--   GETTING ERROR IN THIS PACKAGE WHILE USING C SCHEMA-->
