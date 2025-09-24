@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 	@Autowired
-	@Qualifier("address")
+	@Qualifier("address2")  // name of specific bean we want to execute
 	private Address address;
 
 	public Address getAddress() {
