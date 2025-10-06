@@ -13,5 +13,4 @@ public class Test {
         System.out.println(student.getAddress());
         System.out.println(student.getAddress().getClass().getName());
 	}
-
 }
