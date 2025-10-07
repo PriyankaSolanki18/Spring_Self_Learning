@@ -3,9 +3,11 @@ package com.springcore.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Student {
 	@Value("Priyanka Solanki")
 	private String studentName;
@@ -39,6 +41,4 @@ public class Student {
 	public String toString() {
 		return "Student [studentName=" + studentName + ", city=" + city + ", address=" + address + "]";
 	}
-	
-	
 }

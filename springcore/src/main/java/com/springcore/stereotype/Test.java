@@ -12,5 +12,16 @@ public class Test {
         
         System.out.println(student.getAddress());
         System.out.println(student.getAddress().getClass().getName());
+        
+        System.out.println("Hash code of object : "+student.hashCode());  // same hash code as only one object in created (singleton scope)
+        
+        Student student2 = con.getBean("student",Student.class);
+        System.out.println("Hash code of object : "+student2.hashCode());  // same hash code as only one object in created (singleton scope)
+        
+        Teacher t1 = con.getBean("teacher",Teacher.class);
+        System.out.println(t1.hashCode());
+        
+        Teacher t2 = con.getBean("teacher",Teacher.class);
+        System.out.println(t2.hashCode());
 	}
 }
