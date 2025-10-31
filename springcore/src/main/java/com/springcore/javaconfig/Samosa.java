@@ -2,6 +2,7 @@ package com.springcore.javaconfig;
 
 public class Samosa {
 	public void display() {
-		System.out.println("my price is high...");
+		System.out.println("my price is high....");
 	}
+	
 }

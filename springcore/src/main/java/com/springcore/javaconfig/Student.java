@@ -22,6 +22,7 @@ public class Student {
 
 	public void study() {
 		this.samosa.display();
-		System.out.println("student is reading book");
+		System.out.println("student is reading book...");
 	}
+	
 }
